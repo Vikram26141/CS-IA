@@ -1,0 +1,52 @@
+/* Base layout */
+:root {
+  --primary: #007bff;
+  --primary-dark: #0056b3;
+  --bg: #f8f9fa;
+  --text: #333;
+  --muted: #666;
+  --border: #ddd;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif; color: var(--text); background: var(--bg); }
+
+.container { width: 92%; max-width: 960px; margin: 0 auto; }
+
+/* Header */
+.site-header { background: #fff; border-bottom: 1px solid var(--border); }
+.header-inner { display: flex; align-items: center; justify-content: space-between; padding: 14px 0; }
+.brand { font-weight: 800; letter-spacing: 0.2px; }
+.nav { display: flex; gap: 14px; }
+.nav-link { color: var(--text); text-decoration: none; padding: 8px 10px; border-radius: 6px; }
+.nav-link:hover { background: #f1f3f5; }
+
+/* Hero */
+.hero { text-align: center; padding: 54px 0 20px; }
+.hero h1 { margin: 0 0 10px; font-size: 2.2rem; }
+.hero p { color: var(--muted); margin: 0 auto 20px; max-width: 680px; line-height: 1.6; }
+.actions { display: flex; gap: 10px; justify-content: center; margin-top: 10px; }
+
+/* Buttons */
+.btn { display: inline-block; padding: 12px 20px; border: 1px solid var(--border); border-radius: 8px; text-decoration: none; color: var(--text); background: #fff; font-weight: 600; }
+.btn.primary { background: var(--primary); color: #fff; border-color: var(--primary); }
+.btn.primary:hover { background: var(--primary-dark); }
+.btn:hover { filter: brightness(0.98); }
+
+/* Features */
+.features { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; padding: 24px 0 48px; }
+.feature { background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 18px; text-align: center; }
+.feature-title { font-weight: 700; color: var(--primary); margin-bottom: 6px; }
+.feature-text { color: var(--muted); }
+
+/* Cards & forms */
+.card { background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 22px; max-width: 460px; margin: 28px auto; }
+.card h2 { text-align: center; margin-top: 0; }
+.form-row { margin-bottom: 14px; }
+.input, input[type="text"], input[type="email"], input[type="password"], input[type="file"] { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px; font-size: 16px; }
+.submit { width: 100%; padding: 12px; background: var(--primary); color: #fff; border: none; border-radius: 8px; font-size: 16px; cursor: pointer; }
+.submit:hover { background: var(--primary-dark); }
+.inline-form { display: flex; gap: 10px; align-items: center; margin: 10px 0; }
+.help { color: var(--muted); font-size: 0.95rem; }
+
+/* Footer */
+.site-footer { padding: 16px 0 34px; color: var(--muted); text-align: center; }
