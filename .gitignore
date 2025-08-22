@@ -51,3 +51,12 @@ Thumbs.db
 data/raw/
 data/processed/
 *.pt
+
+# Large files
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.wmv
+backend/data/raw/
+
